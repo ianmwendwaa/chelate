@@ -58,7 +58,7 @@ class Loginregistration : ComponentActivity() {
         }
     }
 }
-//call sms dial email mpesa/stk camera
+
 @Composable
 fun Login() {
     var email by remember { mutableStateOf("") }
@@ -72,6 +72,7 @@ fun Login() {
             .padding(20.dp)
             .background(Color.White)
     ) {
+
 //        logo
         Text(
             text = "eMobilis Login",
@@ -80,6 +81,7 @@ fun Login() {
             fontFamily = FontFamily.Cursive
         )
         Icon(imageVector = Icons.Default.Person, contentDescription = "Accounts")
+
 //        email
         OutlinedTextField(
             value = email,
@@ -119,6 +121,7 @@ fun Login() {
         Spacer(modifier = Modifier.height(30.dp))
         Button(onClick = {
             val intent= Intent(context,Loginregistration::class.java)
+            context.startActivity(intent)
 
             },
             modifier = Modifier

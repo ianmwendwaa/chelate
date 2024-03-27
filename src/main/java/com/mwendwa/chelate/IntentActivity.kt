@@ -70,6 +70,8 @@ fun Intentscreen() {
             fontFamily = FontFamily.Cursive,
             fontSize = 35.sp
         )
+
+//        camera
         Spacer(modifier = Modifier.height(50.dp))
         OutlinedButton(
             onClick = {
@@ -87,6 +89,8 @@ fun Intentscreen() {
 
 
         }
+
+//        call
         Spacer(modifier = Modifier.height(40.dp))
 
         OutlinedButton(
@@ -124,7 +128,7 @@ fun Intentscreen() {
 
         OutlinedButton(
             onClick = {
-                val intent = Intent(Intent.ACTION_CALL, android.net.Uri.parse("tel:" + "+254745636104"))
+                val intent = Intent(Intent.ACTION_SENDTO, android.net.Uri.parse("tel:" + "+254745636104"))
 
                 intent.putExtra("Hello", "How is today's weather")
 
@@ -140,6 +144,8 @@ fun Intentscreen() {
 
 
         }
+
+//        stk
         Spacer(modifier = Modifier.height(40.dp))
 
         OutlinedButton(
@@ -161,6 +167,7 @@ fun Intentscreen() {
         }
         Spacer(modifier = Modifier.height(40.dp))
 
+//        share
         OutlinedButton(
             onClick = {
                 val shareIntent = Intent(Intent.ACTION_SEND)
@@ -183,6 +190,7 @@ fun Intentscreen() {
 
 
         }
+
 //        Email
         Spacer(modifier = Modifier.height(40.dp))
 
@@ -201,6 +209,7 @@ fun Intentscreen() {
 
         Spacer(modifier = Modifier.height(40.dp))
 
+//        dial
         OutlinedButton(
             onClick = {
                 val phone = "+254791930433"

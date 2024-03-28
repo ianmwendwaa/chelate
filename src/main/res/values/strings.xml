@@ -3,4 +3,6 @@
     <string name="title_activity_loginregistration">Loginregistration</string>
     <string name="title_activity_intent">IntentActivity</string>
     <string name="title_activity_calculator">CalculatorActivity</string>
+    <string name="title_activity_simplelist">simplelistActivity</string>
+    <string name="title_activity_recycler">RecyclerActivity</string>
 </resources>
